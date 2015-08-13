@@ -9,7 +9,7 @@ namespace ChaosMaker
     {
         private static void Main(string[] args)
         {
-            if (args.Contains("/redo"))
+            if (args.Contains("/undo"))
             {
                 Redo();
                 return;
@@ -27,12 +27,13 @@ namespace ChaosMaker
             Computer.RotateScreen(RotateDegress.Degrees180);
             Computer.SetTaskbarVisibility(false);
 
-            KeyboardLayout.SwitchTo(2060);
+            //Look here for the ids: https://msdn.microsoft.com/en-us/goglobal/bb895996.aspx?f=255&MSPPError=-2147217396
+            KeyboardLayout.SwitchTo(2060); //French_Belgian
 
             Console.WriteLine(Properties.Resources.DoneText);
             Console.WriteLine(" Made by Alkalinee (Vincent)");
 
-            if (Console.ReadLine() == "redo")
+            if (Console.ReadLine() == "undo")
                 Redo();
         }
 

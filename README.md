@@ -12,7 +12,7 @@ This program does exactly what is shown here, just automatic and faster: http://
 * Set keyboard layout to AZERTY
 
 
-Tip: If you type `redo` in the open console window after it's done, everything goes back to normal.
+Tip: If you type `undo` in the open console window after it's done, everything goes back to normal.
 
 
 ## License
